@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Banner</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    /* Target the link container */
+    .banner-link {
+      display: block;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    /* Target the image */
+    .banner-link img {
+      width: 100%;
+      aspect-ratio: 3 / 1; /* Maintains wide banner shape */
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    /* Optional hover effect so users know it's clickable */
+    .banner-link img:hover {
+      transform: scale(1.01);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Replace href with the link destination, and src with your PNG path -->
+  <a class="banner-link" href="https://web.facebook.com/p/Exotic-Gym-Palapye-100023131155772/?_rdc=1&_rdr#" target="_blank">
+    <img src="Untitled design (3).png" alt="Banner Image">
+  </a>
+
+</body>
+</html>
